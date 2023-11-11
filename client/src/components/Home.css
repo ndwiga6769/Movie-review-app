@@ -1,0 +1,385 @@
+/* HomePage.css */
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav li {
+    cursor: pointer;
+  }
+  
+  /* Welcome Banner */
+  .welcome-banner {
+    text-align: center;
+    background-color: #444;
+    padding: 20px;
+  }
+  
+  .welcome-banner h2 {
+    font-size: 24px;
+    color: white;
+  }
+  
+  /* Featured Movies */
+  /* Center-align the title */
+.featured-movies h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  /* Style the movie posters */
+  .featured-movies .movie-posters {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 80px;
+    border-radius: 8px;
+    margin: 10px;
+  }
+  
+  /*.featured-movies .movie-poster {
+    width: 400px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin: 10px;
+    transition: transform 0.2s;
+    display: flex;
+  }*/
+  
+  .featured-movies .movie-poster:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  .carousel-slide {
+    flex: 0 0 30%;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Top Rated Movies */
+  .top-rated-movies h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  /* Style the movie posters */
+.top-rated-movies .movie-posters {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 80px;
+  border-radius: 8px;
+  margin: 10px;
+  }
+  
+  /*.top-rated-movies .movie-poster {
+    width: 200px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.2s;
+  }*/
+  
+  .top-rated-movies .movie-poster:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .movie-poster {
+    flex: 0 0 20%;
+  }
+  
+  .movie-poster img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Recent User Reviews */
+  
+.recent-user-reviews {
+  padding: 20px;
+}
+
+.recent-user-reviews h3 {
+  text-align: center;
+}
+
+.user-review {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+}
+
+.user-info {
+  font-weight: bold;
+}
+
+.review-text {
+  margin-top: 5px;
+}
+
+/* MoviesPage.css */
+
+.movies-page {
+  background-color: #f5f5f5;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filters select, .filters input, .filters button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  
+}
+
+.filters select {
+  width: 200px;
+}
+.input {
+  display: flex;
+
+}
+
+
+.filters input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.filters button {
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filters button:hover {
+  background-color: #0056b3;
+}
+
+.thumbnails {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.movie-thumbnail {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.movie-thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.movie-thumbnail img {
+  max-width: 100%;
+  height: auto;
+}
+
+.movie-thumbnail h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.next-page-button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.next-page-button:hover {
+  background-color: #0056b3;
+}
+.rate-and-review-section {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.rating-container {
+  margin-top: 16px;
+}
+
+.star {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.star.selected {
+  color: gold;
+}
+
+.review-textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.form-group label:first-child {
+  margin-top: 0;
+}
+
+.form-group label input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button#cancel {
+  background-color: #ccc;
+}
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-item a:hover {
+  color: #ffcc00;
+}
+
+
